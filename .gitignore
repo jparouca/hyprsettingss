@@ -5,7 +5,7 @@
 /bin
 /dist
 /react-src/node_modules
-*/node_modules
+*/node_modules/*
 
 # Neutralinojs client (minified)
 neutralino.js
