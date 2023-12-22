@@ -1,0 +1,489 @@
+[
+  {
+    "title": "Sensitivity",
+    "name": "general:sensitivity",
+    "description": "Mouse sensitivity (legacy, may cause bugs if not 1, prefer input:sensitivity)",
+    "type": "float",
+    "default": 1.0
+  },
+  {
+    "title": "Border Size",
+    "name": "general:border_size",
+    "description": "Size of the border around windows",
+    "type": "int",
+    "default": 1
+  },
+  {
+    "title": "Border on Floating Windows",
+    "name": "general:no_border_on_floating",
+    "description": "Disable borders for floating windows",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Gap inside",
+    "name": "general:gaps_in",
+    "description": "Gaps between windows",
+    "type": "int",
+    "default": 5
+  },
+  {
+    "title": "Gap outside",
+    "name": "general:gaps_out",
+    "description": "Gaps between windows and monitor edges",
+    "type": "int",
+    "default": 20
+  },
+  {
+    "title": "Gap between workspaces",
+    "name": "general:gaps_workspaces",
+    "description": "Gaps between workspaces. Stacks with gaps_out.",
+    "type": "int",
+    "default": 0
+  },
+  {
+    "title": "Inactive Window Border Color",
+    "name": "general:col.inactive_border",
+    "description": "Border color for inactive windows",
+    "type": "gradient",
+    "default": "#000000"
+  },
+  {
+    "title": "Active Window Border Color",
+    "name": "general:col.active_border",
+    "description": "Border color for the active window",
+    "type": "gradient",
+    "default": "#ff0000"
+  },
+  {
+    "title": "Inactive Nogroup Border Color",
+    "name": "general:col.nogroup_border",
+    "description": "Inactive border color for window that cannot be added to a group",
+    "type": "gradient",
+    "default": "#fff"
+  },
+  {
+    "title": "Active Nogroup Border Color",
+    "name": "general:col.nogroup_border_active",
+    "description": "Active border color for window that cannot be added to a group",
+    "type": "gradient",
+    "default": "#fff"
+  },
+  {
+    "title": "Cursor Inactive Timeout",
+    "name": "general:cursor_inactive_timeout",
+    "description": "Time in seconds for cursor inactivity before hiding (set to 0 for never)",
+    "type": "int",
+    "default": 0
+  },
+  {
+    "title": "Layout",
+    "name": "general:layout",
+    "description": "Layout to use (dwindle or master)",
+    "type": "string",
+    "default": "dwindle"
+  },
+  {
+    "title": "Disable Cursor Warp",
+    "name": "general:no_cursor_warp",
+    "description": "Prevents cursor warping in specific situations",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Disable Focus Fallback",
+    "name": "general:no_focus_fallback",
+    "description": "Prevents fallback to next window when moving focus without available options",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Apply Sensitivity to Raw Mouse Output",
+    "name": "general:apply_sens_to_raw",
+    "description": "Applies sensitivity to raw mouse output in games (NOT recommended)",
+    "type": "bool",
+    "default": false,
+    "warning": "Not recommended"
+  },
+  {
+    "title": "Resize on Border",
+    "name": "general:resize_on_border",
+    "description": "Enables resizing windows by dragging on borders and gaps",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Extend Border Grab Area",
+    "name": "general:extend_border_grab_area",
+    "description": "Expands the area around borders for resizing (works with resize_on_border)",
+    "type": "int",
+    "default": 15
+  },
+  {
+    "title": "Hover Icon on Borders",
+    "name": "general:hover_icon_on_borders",
+    "description": "Shows a cursor icon when hovering over borders (works with resize_on_border)",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Allow Tearing",
+    "name": "general:allow_tearing",
+    "description": "Master switch for allowing tearing to occur",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Rounded Corners",
+    "name": "window:rounding",
+    "description": "Radius of rounded corners for windows (in layout pixels)",
+    "type": "int",
+    "default": 0
+  },
+  {
+    "title": "Active Window Opacity",
+    "name": "window:active_opacity",
+    "description": "Opacity of active windows (0.0 - 1.0)",
+    "type": "float",
+    "default": 1.0
+  },
+  {
+    "title": "Inactive Window Opacity",
+    "name": "window:inactive_opacity",
+    "description": "Opacity of inactive windows (0.0 - 1.0)",
+    "type": "float",
+    "default": 1.0
+  },
+  {
+    "title": "Fullscreen Window Opacity",
+    "name": "window:fullscreen_opacity",
+    "description": "Opacity of fullscreen windows (0.0 - 1.0)",
+    "type": "float",
+    "default": 1.0
+  },
+  {
+    "title": "Drop Shadows",
+    "name": "window:drop_shadow",
+    "description": "Enable drop shadows on windows",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Shadow Range",
+    "name": "window:shadow_range",
+    "description": "Range (size) of shadows in layout pixels",
+    "type": "int",
+    "default": 4
+  },
+  {
+    "title": "Shadow Render Power",
+    "name": "window:shadow_render_power",
+    "description": "Power of shadow falloff (1-4, higher means faster falloff)",
+    "type": "int",
+    "default": 3
+  },
+  {
+    "title": "Ignore Window for Shadow",
+    "name": "window:shadow_ignore_window",
+    "description": "Render shadow only around window, not behind it",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Shadow Color",
+    "name": "window:col.shadow",
+    "description": "Color of shadows (alpha controls opacity)",
+    "type": "color",
+    "default": "0xee1a1a1a"
+  },
+  {
+    "title": "Inactive Shadow Color",
+    "name": "window:col.shadow_inactive",
+    "description": "Color of shadows for inactive windows (falls back to col.shadow if unset)",
+    "type": "color",
+    "default": "unset"
+  },
+  {
+    "title": "Shadow Offset",
+    "name": "window:shadow_offset",
+    "description": "Rendering offset for shadows",
+    "type": "vec2",
+    "default": [
+      0,
+      0
+    ]
+  },
+  {
+    "title": "Shadow Scale",
+    "name": "window:shadow_scale",
+    "description": "Scale of shadows (0.0-1.0)",
+    "type": "float",
+    "default": 1.0
+  },
+  {
+    "title": "Dim Inactive Windows",
+    "name": "window:dim_inactive",
+    "description": "Enable dimming of inactive windows",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Dim Strength",
+    "name": "window:dim_strength",
+    "description": "Amount to dim inactive windows (0.0-1.0)",
+    "type": "float",
+    "default": 0.5
+  },
+  {
+    "title": "Dim Special Workspace",
+    "name": "window:dim_special",
+    "description": "Amount to dim other windows when a special workspace is open (0.0-1.0)",
+    "type": "float",
+    "default": 0.2
+  },
+  {
+    "title": "Dim Around Rule",
+    "name": "window:dim_around",
+    "description": "Amount to dim other windows when using the dimaround rule (0.0-1.0)",
+    "type": "float",
+    "default": 0.4
+  },
+  {
+    "title": "Screen Shader",
+    "name": "window:screen_shader",
+    "description": "Path to a custom shader to apply at the end of rendering",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Enabled",
+    "name": "decoration:blur:enabled",
+    "description": "Enable Kawase window background blur",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Blur Size",
+    "name": "decoration:blur:size",
+    "description": "Distance of blur (in pixels)",
+    "type": "int",
+    "default": 8
+  },
+  {
+    "title": "Blur Passes",
+    "name": "decoration:blur:passes",
+    "description": "Number of blur passes to perform",
+    "type": "int",
+    "default": 1
+  },
+  {
+    "title": "Ignore Window Opacity",
+    "name": "decoration:blur:ignore_opacity",
+    "description": "Make blur layer ignore window opacity",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "New Optimizations",
+    "name": "decoration:blur:new_optimizations",
+    "description": "Enable advanced blur optimizations (recommended for performance)",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Xray Mode",
+    "name": "decoration:blur:xray",
+    "description": "Floating windows ignore tiled windows in blur (requires blur_new_optimizations)",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Noise Level",
+    "name": "decoration:blur:noise",
+    "description": "Amount of noise to apply to blur (0.0-1.0)",
+    "type": "float",
+    "default": 0.0117
+  },
+  {
+    "title": "Contrast Modulation",
+    "name": "decoration:blur:contrast",
+    "description": "Contrast modulation for blur (0.0-2.0)",
+    "type": "float",
+    "default": 0.8916
+  },
+  {
+    "title": "Brightness Modulation",
+    "name": "decoration:blur:brightness",
+    "description": "Brightness modulation for blur (0.0-2.0)",
+    "type": "float",
+    "default": 0.8172
+  },
+  {
+    "title": "Vibrancy",
+    "name": "decoration:blur:vibrancy",
+    "description": "Increase saturation of blurred colors (0.0-1.0)",
+    "type": "float",
+    "default": 0.1696
+  },
+  {
+    "title": "Vibrancy Darkness",
+    "name": "decoration:blur:vibrancy_darkness",
+    "description": "Strength of vibrancy effect on dark areas (0.0-1.0)",
+    "type": "float",
+    "default": 0.0
+  },
+  {
+    "title": "Blur Special Workspace",
+    "name": "decoration:blur:special",
+    "description": "Blur behind the special workspace (note: expensive)",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Keyboard Model",
+    "name": "input:kb_model",
+    "description": "Appropriate XKB keymap parameter. See the note below.",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Keyboard Layout",
+    "name": "input:kb_layout",
+    "description": "Appropriate XKB keymap parameter",
+    "type": "str",
+    "default": "us"
+  },
+  {
+    "title": "Keyboard Variant",
+    "name": "input:kb_variant",
+    "description": "Appropriate XKB keymap parameter",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Keyboard Options",
+    "name": "input:kb_options",
+    "description": "Appropriate XKB keymap parameter",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Keyboard Rules",
+    "name": "input:kb_rules",
+    "description": "Appropriate XKB keymap parameter",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Keyboard File",
+    "name": "input:kb_file",
+    "description": "Path to a custom .xkb file, if preferred",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Numlock by Default",
+    "name": "input:numlock_by_default",
+    "description": "Engage numlock by default",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Repeat Rate",
+    "name": "input:repeat_rate",
+    "description": "The repeat rate for held-down keys, in repeats per second",
+    "type": "int",
+    "default": 25
+  },
+  {
+    "title": "Repeat Delay",
+    "name": "input:repeat_delay",
+    "description": "Delay before a held-down key is repeated, in milliseconds",
+    "type": "int",
+    "default": 600
+  },
+  {
+    "title": "Mouse Sensitivity",
+    "name": "input:sensitivity",
+    "description": "Sets the mouse input sensitivity (-1.0 to 1.0)",
+    "type": "float",
+    "default": 0.0
+  },
+  {
+    "title": "Cursor Acceleration Profile",
+    "name": "input:accel_profile",
+    "description": "Sets the cursor acceleration profile (adaptive, flat, custom)",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Force No Acceleration",
+    "name": "input:force_no_accel",
+    "description": "Force no cursor acceleration (not recommended)",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Left-Handed Mode",
+    "name": "input:left_handed",
+    "description": "Switches RMB and LMB",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Scroll Points",
+    "name": "input:scroll_points",
+    "description": "Sets the scroll acceleration profile for custom mode",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Scroll Method",
+    "name": "input:scroll_method",
+    "description": "Sets the scroll method (2fg, edge, on_button_down, no_scroll)",
+    "type": "str",
+    "default": "[[Empty]]"
+  },
+  {
+    "title": "Scroll Button",
+    "name": "input:scroll_button",
+    "description": "Sets the scroll button (int, 0 means default)",
+    "type": "int",
+    "default": 0
+  },
+  {
+    "title": "Scroll Button Lock",
+    "name": "input:scroll_button_lock",
+    "description": "Enable scroll button lock (press once to scroll)",
+    "type": "bool",
+    "default": 0
+  },
+  {
+    "title": "Natural Scroll",
+    "name": "input:natural_scroll",
+    "description": "Inverts scrolling direction",
+    "type": "bool",
+    "default": false
+  },
+  {
+    "title": "Follow Mouse Focus",
+    "name": "input:follow_mouse",
+    "description": "Specify how cursor movement affects window focus (0/1/2/3)",
+    "type": "int",
+    "default": 1
+  },
+  {
+    "title": "Mouse Refocus",
+    "name": "input:mouse_refocus",
+    "description": "Disable refocusing on hovered window unless crossing a boundary (requires follow_mouse=1)",
+    "type": "bool",
+    "default": true
+  },
+  {
+    "title": "Float Switch Focus Override",
+    "name": "input:float_switch_override_focus",
+    "description": "Change focus to window under cursor when switching tiled/floating (1) or also on float-to-float (2)",
+    "type": "int",
+    "default": 1
+  }
+]
